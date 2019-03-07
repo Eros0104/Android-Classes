@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/country"
+        android:textSize="@dimen/text_font"/>
+
+    <ImageView
+        android:id="@+id/flag"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/default_height"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/flag"
+        android:contentDescription="@string/country"/>/>
+
+    <ImageView
+        android:id="@+id/food"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/default_height"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/food"
+        android:contentDescription="@string/food"/>/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/food"
+        android:textSize="@dimen/text_font"/>
+
+</LinearLayout>
